@@ -1,0 +1,77 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  color: aliceblue; /*Cabia el color del texto en todo*/
+  box-sizing: border-box;/*Para que los elementos tengan la caja de borde por defecto */
+  font-style: normal;
+  font-optical-sizing: auto;
+  
+}
+
+header, footer {
+  background-color: rgb(219,70,72);
+}
+
+/* configuramos la intefaz de header */
+nav {
+  position: fixed;
+  background-color: rgb(219,70,72);
+  width: 100%;
+}
+
+.interfaz{
+  margin: 20px;
+  text-align: right;
+}
+
+li{
+  display: inline;
+  padding-left: 1.5em;
+}
+
+#logo{
+  display: inline;
+  margin-left: 1rem;
+}
+
+ul, a {
+  list-style-type: none;
+  text-decoration: none;
+  color:aliceblue;
+}
+
+.letras-intercativas { /* configruamos el INCIAR SECION como un boton */
+  background-color: rgb(165, 0, 0);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header a:hover{
+color: black;
+}
+   
+
+
+.letras-intercativas:hover {
+  border: 2px solid orange;
+  color: orange;
+}
+
+/*hasta aca es la configuracion del header */
+
+
+.banner {
+  padding: 170px;
+  text-align: center;
+  background-image: url(imagenes/Cine-1-2114569527.jpg);
+  
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.buscador {
+  padding: 170px;
+  background-color: rgb(24,20,25);
+  text-align: center;
+}
