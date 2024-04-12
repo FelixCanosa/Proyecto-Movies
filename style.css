@@ -7,6 +7,19 @@
   font-style: normal;
   font-optical-sizing: auto;
   
+  
+}
+
+
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
 }
 
 header, footer {
@@ -14,6 +27,21 @@ header, footer {
 }
 
 /* configuramos la intefaz de header */
+
+
+
+
+.navegacion{
+  
+  margin: 0 10px ;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
 nav {
   position: fixed;
   background-color: rgb(219,70,72);
@@ -23,6 +51,7 @@ nav {
 .interfaz{
   margin: 20px;
   text-align: right;
+  
 }
 
 li{
@@ -33,6 +62,7 @@ li{
 #logo{
   display: inline;
   margin-left: 1rem;
+
 }
 
 ul, a {
@@ -42,7 +72,7 @@ ul, a {
 }
 
 .letras-intercativas { /* configruamos el INCIAR SECION como un boton */
-  background-color: rgb(165, 0, 0);
+  background-color:rgb(159,54,71);
   padding: 10px;
   border-radius: 10px;
 }
@@ -56,22 +86,142 @@ color: black;
 .letras-intercativas:hover {
   border: 2px solid orange;
   color: orange;
+  
+  
+}
+
+#registrarse{
+  display: inline-block;
+  margin: 20px;
 }
 
 /*hasta aca es la configuracion del header */
 
+main{
+  background-color: rgb(24,20,25);
+  
+}
 
+/*configuracion del buscador*/
 .banner {
   padding: 170px;
   text-align: center;
   background-image: url(imagenes/Cine-1-2114569527.jpg);
-  
+  box-shadow:inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
   background-size: cover;
   background-position: center;
   height: 500px;
+  
 }
+
+
+
+h1{
+  font-size: 4vw;
+}
+
 .buscador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 170px;
   background-color: rgb(24,20,25);
   text-align: center;
 }
+
+#que-buscas-ver{
+  font-size: 3vw;
+}
+
+input{
+  background-color: rgb(34,25,36);
+  margin: 10px 0;
+  height: 45px;
+  width:  45%;
+  border-radius: 20px;
+  padding: 0 7px;
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+}
+
+/*fin de la configuracion del buscador*/
+
+/*configuracion de peliculas*/
+
+.peliculas{
+  background-color: rgb(24,20,25);
+  text-align: center;
+  font-size: 170%;
+   margin: 0 10vw; /*esto lo centra */
+  
+  
+}
+
+.contenedor-de-peliculas{
+  margin: 10px 10vw;
+  padding: 20px 0;
+  overflow: hidden;
+  
+  
+  gap: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.contenedor-de-peliculas .peli{
+
+  /* width: 13%;
+  max-width: 100%;
+  height: 290px;
+  
+  border-radius: 17px; */
+
+  width: 15%;
+  max-width: 350px;
+  min-width:  180px;
+  height: 300px;
+
+  object-fit: cover;
+  border-radius: 10px; 
+}
+
+#botones-contenedor{
+  display: flex;
+  margin-bottom: 3%;
+  justify-content: center;
+  gap: 2%;
+  
+}
+
+.boton{
+  background-color: rgb(159,54,71);
+  border-radius: 17px;
+  padding: 9px;
+  border: 2px solid black;
+}
+
+.boton:hover{
+  border: 2px solid orange;
+  color: orange;
+}
+
+
+footer  {
+  background-color: rgb(159,54,71);
+  padding: 2em;
+}
+
+.fot{
+margin: 0 2%;
+}
+
+.fot:hover{
+  color: orange;
+}
+

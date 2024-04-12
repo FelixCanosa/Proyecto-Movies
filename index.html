@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <title>CAC-Movies</title>
 </head>
 
@@ -12,7 +15,7 @@
 
     <header> <!-- cabeza -->
         <nav> <!-- interfaz  -->
-
+            <div class="navegacion">
             <div id="logo">
                 <a href="">CAC - Movies</a>
             </div>
@@ -22,37 +25,65 @@
                 <li> <a href="#">Registrarse</a> </li>
                 <li> <a class="letras-intercativas" href="#">Iniciar Sesión</a> </li>
             </ul>
+            </div>
         </nav>
     </header>
 
     <main> 
 
         <section class="banner">
-            <h1>Películas y series ilimitadas y mucho más.</h1>
+            <h1>Películas y series ilimitadas </h1>
+            <h1>y mucho más.</h1>
             <h2>Disfruta donde quieras. Cancela cuando quieras.</h2>
-            <a class="letras-intercativas" href="#">Registrarse</a>
+            <a class="letras-intercativas" id="registrarse" href="#">Registrarse</a>
         </section>
 
         <section class="buscador">
-            <h2>¿Qué estas buscando para ver?</h2>
+            <h2 id="que-buscas-ver">¿Qué estas buscando para ver?</h2>
             <input type="text" placeholder="Buscar película o serie..."/>
 
         </section>
 
-        <section style="background-color: blueviolet;">
+        <section class="peliculas">
             <h3>Las tendencias de hoy</h3>
-
         </section>
 
-        <section style="background-color: aquamarine;">
+        <div class="contenedor-de-peliculas">
+
+
+            <img class="peli" src="imagenes/1.jpg" alt="">
+            <img class="peli" src="imagenes/1.jpg" alt="">
+            <img class="peli" src="imagenes/1.jpg" alt="">
+            <img class="peli" src="imagenes/1.jpg" alt="">
+            <img class="peli" src="imagenes/1.jpg" alt="">
+            <img class="peli" src="imagenes/1.jpg" alt="">
+            <img class="peli" src="imagenes/1.jpg" alt="">
+            <img class="peli" src="imagenes/1.jpg" alt="">
+          
+
+        </div>
+
+        <div id="botones-contenedor">
+            <a class="boton" href="http://">anterior</a>
+            <a class="boton" href="http://">siguiente</a>
+        </div>
+
+        <section>
             <h3>Las más aclamadas</h3>
+
         </section>
+
         
 
     </main>
 
     <footer> <!-- pie de pagina -->
-            <p>hola</p>
+
+        <a class="fot" href="#">Términos y condiciones</a>
+        <a  class="fot" href="#">Preguntas Frecuentes</a>
+        <a  class="fot" href="#">Ayuda</a>
+        <a  class="fot" href="#">CRUD Peliculas</a>
+            
     </footer>
 
 
